@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+.navbar{
+    width: 100%;
+}
+.cards{
+    display: inline-flex;
+}
+.caard{
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px grey;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.caard:hover{
+    box-shadow: 8px 8px 8px grey;
+    transition: 0.3s;
+}
+
