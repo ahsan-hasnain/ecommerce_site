@@ -16,7 +16,7 @@ import CartBtn from './contexts/cartbtn';
 function App() {
   return (
     <div>
-    <CartBtn> 
+   
       <CartProd>
       <DetailState>
       <Navmenu />
@@ -27,7 +27,7 @@ function App() {
       </Routes>
       </DetailState>
       </CartProd>
-      </CartBtn>
+    
 
     </div>
   )
