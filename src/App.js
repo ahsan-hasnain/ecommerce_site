@@ -7,10 +7,10 @@ import { Electronics } from './components/Electronics';
 import Navmenu from './components/Navbar';
 import Cart from './screens/cart';
 import { Route, Routes } from 'react-router-dom';
-import DetailState from './conexts/detailstate';
+import DetailState from './contexts/detailstate';
 import Detsrc from './screens/detsrcs';
-import CartProd from './conexts/cartprods';
-import CartBtn from './conexts/cartbtn';
+import CartProd from './contexts/cartprods';
+import CartBtn from './contexts/cartbtn';
 
 
 function App() {

@@ -3,13 +3,14 @@ import '../index.css';
 import { useState } from "react";
 import '../components/nav.css';
 import prod from "../components/Products";
-import { CartButton, DetailContext, ProdCartCon } from "../conexts/mycontext";
+import { CartButton, DetailContext, ProdCartCon } from "../contexts/mycontext";
 import { Button, Card, CardBody, CardFooter, CardHeader, CardImg, CardSubtitle, CardTitle } from "reactstrap";
 function Detsrc(){
     const c = useContext(DetailContext)
     const z = useContext(ProdCartCon)
     const b = useContext(CartButton)
     const [state, setstate] = useState()
+    const [Quantity, setQuantity] = useState(1)
     return(
         <div>
            <p>{c.state.map((item, index)=>{
@@ -32,16 +33,11 @@ function Detsrc(){
                         <br/><br/><br/><br/><br/><br/><br/>
                         </CardBody>
                         <CardFooter>
-                            {/* {z.prods.incart ? <Button>{b.btn.title}</Button>: <Button onClick={()=>{
-                                 z.setprods([...z.prods,{
-                                    name: item.name,
-                                    incart: true
-                                }])
-                                b.setbtn({
-                                    title: 'Added to Cart',
-                                    disabled: true
-                                })
-                            }}>{b.btn.title}</Button>} */}
+
+                            <div className="quantitySelector">
+                            <p><Button  type="number" value={Quantity}  onClick={()=>setQuantity(Quantity-1)}>-</Button><span style={{paddingInlineEnd:'125px', paddingInlineStart:'125px'}}>Quantity: {Quantity}</span> <span><Button  type="number" value={Quantity}  onClick={()=>setQuantity(Quantity+1)}>+</Button></span></p>
+                            </div>
+                            
                             <Button disabled={z.prods.some(i=>i.name ===item.name)} style={{width: '99%'}} onClick={()=>{
                                 z.setprods([...z.prods,{
                                     name: item.name,
@@ -49,6 +45,7 @@ function Detsrc(){
                                     url: item.url,
                                     description: item.description,
                                     incart: true,
+                                    quantity: 4
                                 }])
                                 }}>{z.prods.some(i=>i.name ===item.name)?'Added to Cart':'Add to Cart'}</Button>
                         </CardFooter>

@@ -4,7 +4,7 @@ import './nav.css';
 import { Link } from 'react-router-dom';
 import prod from "./Products";
 import { Card, CardImg, CardBody, CardHeader, CardSubtitle, CardTitle, CardFooter } from "reactstrap";
-import { DetailContext } from "../conexts/mycontext";
+import { DetailContext } from "../contexts/mycontext";
 export function Electronics(){
     console.log('working');
     const det = useContext(DetailContext)

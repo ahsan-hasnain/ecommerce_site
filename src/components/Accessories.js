@@ -5,7 +5,7 @@ import prod from "./Products";
 import { Card, CardImg, CardBody, CardHeader, CardSubtitle, CardTitle, CardFooter } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { DetailContext } from "../conexts/mycontext";
+import { DetailContext } from "../contexts/mycontext";
 export function Accessories(){
     console.log('working');
     const de = useContext(DetailContext)
