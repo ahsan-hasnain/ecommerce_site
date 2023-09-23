@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
-import { useState } from "react";
 import '../components/nav.css';
-import prod from "../components/Products";
-import { DetailContext, ProdCartCon } from "../contexts/mycontext";
-import { Button, Card, CardImg } from "reactstrap";
+
+import { ProdCartCon } from "../contexts/mycontext";
+import { Button} from "reactstrap";
 function Cart(){
     const a = useContext(ProdCartCon)
     const sum = a.prods.reduce(
-        (accumulator, currentValue) => +accumulator + (+currentValue.price*currentValue.quantity),
+        (accumulator, currentValue) => +accumulator + (+currentValue.price),
         0,
-      );
+      ); 
     const shippingCost = 300;
     return(
         <div>
@@ -21,7 +20,7 @@ function Cart(){
                 <div className="productslist" style={{width:'80%'}}>
                   <div style={{display: 'inline-flex',margin:'20px'}}> <img style={{height:'200px'}} src={item.url}></img> 
                   <div>
-                  <h4 style={{paddingTop:'5px', marginInlineStart:'90px'}}>{item.name} {''}{'('+item.quantity+')'}</h4>
+                  <h4 style={{paddingTop:'5px', marginInlineStart:'90px'}}>{item.name} {''}</h4>
                   <p style={{marginInlineStart:'90px', opacity:'0.4'}}>{item.description}</p>
                   <h6 style={{marginInlineStart:'90px'}}>Price: {item.price}</h6>
                   </div>

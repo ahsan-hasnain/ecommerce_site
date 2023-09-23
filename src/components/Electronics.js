@@ -19,13 +19,9 @@ export function Electronics(){
              return(
                 <Link to='/detsrc'>
                 <div className="caard" >
-                    <Card color="light" style={{width: '220px'}} onClick={()=>{det.setstate([{name: element.name,
-                    company: element.compnay,
-                    url: element.url,
-                    price: element.price,
-                    ad: element.ad,
-                    description: element.description,
-                    incart: element.incart}])}}>
+                    <Card color="light" style={{width: '220px'}} onClick={()=>{det.setstate({
+                        id: element.id
+                    })}}>
                         <CardHeader>
                         <CardTitle className="text text-centre">{element.name}</CardTitle>
                         <CardSubtitle>{element.compnay}</CardSubtitle>

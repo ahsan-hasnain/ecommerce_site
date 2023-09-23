@@ -21,12 +21,7 @@ export function Accessories(){
              return(
                 <Link to='/detsrc'>
                 <div className="caard" >
-                    <Card color="light" style={{width: '220px'}} onClick={()=>{de.setstate([{name: element.name,
-                    company: element.compnay,
-                    url: element.url,
-                    price: element.price,
-                    ad: element.ad,
-                    description: element.description}])}}>
+                    <Card color="light" style={{width: '220px'}} onClick={()=>{de.setstate({id:element.id})}}>
                         <CardHeader>
                         <CardTitle className="text text-centre">{element.name}</CardTitle>
                         <CardSubtitle>{element.compnay}</CardSubtitle>

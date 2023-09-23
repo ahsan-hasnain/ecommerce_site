@@ -9,7 +9,7 @@ export const prod = [
                price: "44.5",
                color: "black",
                compnay: "Apple",
-               link: "2",
+               id: "2",
                incart: false,
                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
     
@@ -20,7 +20,7 @@ export const prod = [
                price: "48.5",
                color: "black",
                compnay: "Apple",
-               link: "3",
+               id: "3",
                incart: false,
                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             }, {
@@ -30,7 +30,7 @@ export const prod = [
                 price: "4.5",
                 color: "green",
                 compnay: "Apple",
-                link: "4",
+                id: "4",
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
             {
@@ -40,7 +40,7 @@ export const prod = [
                 price: "4.5",
                 color: "green",
                 compnay: "Apple",
-                link: "5",
+                id: "5",
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
             {
@@ -50,7 +50,7 @@ export const prod = [
                price: "44.5",
                color: "black",
                compnay: "Apple",
-               link: "6",
+               id: "6",
                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
             {
@@ -60,7 +60,7 @@ export const prod = [
                 price: "44.5",
                 color: "black",
                 compnay: "Apple",
-                link: "7",
+                id: "7",
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
            
@@ -71,7 +71,7 @@ export const prod = [
                 price: "4.5",
                 color: "green",
                 compnay: "Apple",
-                link: "8",
+                id: "8",
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
             {
@@ -81,7 +81,7 @@ export const prod = [
                 price: "4.5",
                 color: "green",
                 compnay: "Levis",
-                link: "9",
+                id: "9",
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
             {

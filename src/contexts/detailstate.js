@@ -4,11 +4,8 @@ import prod from "../components/Products";
 const DetailState = (props)=>{
     const s = []
     const [state, setstate] = useState(s)
-    const update=()=>{
-        setstate([{name: 'talha'}])
-    }
     return(
-        <DetailContext.Provider value={{state, update, setstate}}>
+        <DetailContext.Provider value={{state, setstate}}>
             {props.children}
         </DetailContext.Provider>
     )
