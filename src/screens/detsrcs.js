@@ -3,15 +3,15 @@ import '../index.css';
 import { useState } from "react";
 import '../components/nav.css';
 import prod from "../components/Products";
-import { DetailContext, ProdCartCon } from "../contexts/mycontext";
+import { ProdCartCon } from "../contexts/cartprods";
 import { Button, Card, CardBody, CardFooter, CardHeader, CardImg, CardSubtitle, CardTitle } from "reactstrap";
+import { useParams } from "react-router-dom";
 function Detsrc(){
-    const c = useContext(DetailContext)
-    const z = useContext(ProdCartCon)
+    const cart = useContext(ProdCartCon)
+    const {productId} = useParams();
     const item = prod.find(product=>{
-         return product.id === c.state.id
+         return product.id === productId
     })
-    console.log(item);
     const [Quantity, setQuantity] = useState(1)
     return(
         <div>
@@ -39,9 +39,9 @@ function Detsrc(){
                             <p><Button  type="number" value={Quantity}  onClick={()=>setQuantity(Quantity-1)}>-</Button><span style={{paddingInlineEnd:'125px', paddingInlineStart:'125px'}}>Quantity: {Quantity}</span> <span><Button  type="number" value={Quantity}  onClick={()=>setQuantity(Quantity+1)}>+</Button></span></p>
                             </div>
                             
-                            <Button disabled={z.prods.some(i=>i.id ===item.id)} style={{width: '99%'}} onClick={()=>{
-                                z.addToCart(item)
-                                }}>{z.prods.some(i=>i.id ===item.id)?'Added to Cart':'Add to Cart'}</Button>
+                            <Button disabled={cart.prods.some(i=>i.id ===item.id)} style={{width: '99%'}} onClick={()=>{
+                                cart.addToCart(item)
+                                }}>{cart.prods.some(i=>i.id ===item.id)?'Added to Cart':'Add to Cart'}</Button>
                         </CardFooter>
 
                     </Card>

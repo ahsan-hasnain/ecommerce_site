@@ -1,8 +1,9 @@
-import React, { useContext, useState } from "react";
-import { ProdCartCon } from "./mycontext";
-import prod from "../components/Products";
+
+import React, { useState } from "react";
+import { createContext } from 'react';
+
+export const ProdCartCon = createContext();
 const CartProd = (props)=>{
-    const x = []
     const [prods, setprods] = useState([])
     const addToCart=(product)=>{
         setprods([...prods, product])

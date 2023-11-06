@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import '../components/nav.css';
 
-import { ProdCartCon } from "../contexts/mycontext";
+import { ProdCartCon } from "../contexts/cartprods";
 import { Button} from "reactstrap";
 function Cart(){
-    const a = useContext(ProdCartCon)
-    const sum = a.prods.reduce(
+    const cart = useContext(ProdCartCon)
+    const sum = cart.prods.reduce(
         (accumulator, currentValue) => +accumulator + (+currentValue.price),
         0,
       ); 
@@ -14,11 +14,11 @@ function Cart(){
         <div>
            <h1>Products in Cart</h1>
            <div style={{display:'inline-flex'}}>
-           <p>{a.prods.map((item)=>{
+           <p>{cart.prods.map((item)=>{
                return(
                 <div style={{display:'inline-flex', borderRight: '2px solid  black', width: '60%'}}>
                 <div className="productslist" style={{width:'80%'}}>
-                  <div style={{display: 'inline-flex',margin:'20px'}}> <img style={{height:'200px'}} src={item.url}></img> 
+                  <div style={{display: 'inline-flex',margin:'20px'}}> <img style={{height:'200px'}} alt="" src={item.url}></img> 
                   <div>
                   <h4 style={{paddingTop:'5px', marginInlineStart:'90px'}}>{item.name} {''}</h4>
                   <p style={{marginInlineStart:'90px', opacity:'0.4'}}>{item.description}</p>

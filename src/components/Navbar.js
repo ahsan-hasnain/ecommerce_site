@@ -2,17 +2,10 @@ import React, { Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './nav.css'
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
   } from 'reactstrap';
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -34,15 +27,6 @@ function Navmenu() {
                 </NavItem>
                 <NavItem>
                     <NavLink to='/cart' style={{color: 'white'}}>Sign In</NavLink>
-                </NavItem>
-                <NavItem>
-                    <input type='text' style={{marginLeft: '360%',
-                    width: '200%',
-                    borderRadius: '20px',
-                    border: '2px solid black', 
-                    paddingLeft: '7px',
-                    marginTop: '7px'}} placeholder='search here'>
-                    </input>
                 </NavItem>
                 </Nav>
             </Navbar>

@@ -4,9 +4,35 @@ a{
 .navbar{
     width: 100%;
 }
-.cards{
-    display: inline-flex;
-}
+.cards {
+    display: grid;
+    gap: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
 .caard{
     box-sizing: border-box;
     box-shadow: 3px 3px 3px grey;

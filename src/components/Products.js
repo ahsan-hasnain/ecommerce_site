@@ -1,6 +1,3 @@
-import React from "react";
-
-
 export const prod = [
         {
                ad: "electric",
@@ -13,7 +10,32 @@ export const prod = [
                incart: false,
                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
     
-            }, {
+            },
+            {
+                ad: "electric",
+                url: 'https://th.bing.com/th/id/OIP.L4-w47OFTtQb-biTFCUHdAHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7',
+                name: "EARPHONES",
+                price: "44.5",
+                color: "black",
+                compnay: "Apple",
+                id: "2",
+                incart: false,
+                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
+     
+             },
+             {
+                ad: "electric",
+                url: 'https://th.bing.com/th/id/OIP.L4-w47OFTtQb-biTFCUHdAHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7',
+                name: "EARPHONES",
+                price: "44.5",
+                color: "black",
+                compnay: "Apple",
+                id: "2",
+                incart: false,
+                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
+     
+             },
+              {
                ad: "electric",
                url: 'https://th.bing.com/th/id/OIP.r5IbMDz1C6aahfpMT9J0NAHaHa?w=216&h=216&c=7&r=0&o=5&dpr=1.1&pid=1.7',
                name: "headphones",
@@ -64,6 +86,16 @@ export const prod = [
                 description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
             },
            
+            {
+                ad: "accesories",
+                url: 'https://th.bing.com/th/id/OIP.Ik-lP6mxFls3xRO6F7y0PQAAAA?w=170&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7',
+                name: "Charging Cables",
+                price: "4.5",
+                color: "green",
+                compnay: "Apple",
+                id: "8",
+                description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quae esse commodi soluta! Ad odio officiis deserunt recusandae perspiciatis dolore, dolorem aliquid excepturi voluptas ea tenetur quod, iusto nisi quis.'
+            },
             {
                 ad: "accesories",
                 url: 'https://th.bing.com/th/id/OIP.Ik-lP6mxFls3xRO6F7y0PQAAAA?w=170&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7',
